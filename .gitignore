@@ -221,3 +221,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local pipeline data (same layout as the storage bucket)
+data/
