@@ -1,0 +1,21 @@
+[project]
+name = "github-trends"
+version = "0.1.0"
+description = "Daily pipeline that finds trending GitHub repositories from GH Archive."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "boto3",
+    "duckdb>=2.0",
+    "requests",
+]
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "ruff",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

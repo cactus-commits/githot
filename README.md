@@ -22,3 +22,10 @@ Once a day it takes all public GitHub events from [GH Archive](https://www.gharc
 ## How to run
 
 
+Needs [uv](https://docs.astral.sh/uv/). From the repo root:
+
+```
+uv sync               # install Python packages into .venv
+uv run pytest         # run the tests
+uv run ruff check .   # check code style
+```
